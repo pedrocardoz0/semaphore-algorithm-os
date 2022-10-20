@@ -1,4 +1,4 @@
-use x0::bank::{deposit, withdraw, Account};
+use x0::bank::{deposit, withdraw, Account, Smaphore};
 use std::{
     thread,
     sync::{Arc, Mutex}
@@ -9,17 +9,27 @@ fn main() {
         wallet: 1000
     }));
 
+    let mut smaphore = Smaphore { sign: true };
+
     let one = Arc::clone(&user_account);
     let thread_deposit = thread::spawn(move || {
-        for _ in 0..=10 {
-            deposit(&one);
+        if smaphore.sign {
+            smaphore.sign = false;
+            for _ in 0..=10 {
+                deposit(&one);
+            }
+            smaphore.sign = true;
         }
     });
     
     let two = Arc::clone(&user_account);
     let thread_withdraw = thread::spawn(move || {
-        for _ in 0..=10 {
-            withdraw(&two);
+        if smaphore.sign {
+            smaphore.sign = false;
+            for _ in 0..=10 {
+                withdraw(&two);
+            }   
+            smaphore.sign = true; 
         }
     });
 

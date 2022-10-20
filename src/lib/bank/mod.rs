@@ -7,6 +7,11 @@ pub struct Account {
     pub wallet: isize
 }
 
+#[derive(Debug)]
+pub struct Smaphore {
+    pub sign: bool,
+}
+
 pub fn deposit(account: &Arc<Mutex<Account>>) {
     let mut saldo = account.lock().unwrap();
     saldo.wallet += 300;
