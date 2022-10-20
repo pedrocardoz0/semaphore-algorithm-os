@@ -1,10 +1,8 @@
-use std::{
-    sync::{Arc, Mutex}
-};
+use std::sync::{Arc, Mutex};
 
 #[derive(Debug)]
 pub struct Account {
-    pub wallet: isize
+    pub wallet: isize,
 }
 
 #[derive(Debug)]
@@ -16,14 +14,12 @@ pub fn deposit(account: &Arc<Mutex<Account>>) {
     let mut saldo = account.lock().unwrap();
     saldo.wallet += 300;
 
-    println!("Account >> {:?}", saldo.wallet);
-    println!("deposit");
+    println!("deposit -> saldo: {:?}", saldo.wallet);
 }
 
 pub fn withdraw(account: &Arc<Mutex<Account>>) {
     let mut saldo = account.lock().unwrap();
     saldo.wallet -= 200;
 
-    println!("Account >> {:?}", saldo.wallet);
-    println!("withdraw");
+    println!("withdraw -> saldo: {:?}", saldo.wallet);
 }
