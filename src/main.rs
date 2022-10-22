@@ -1,16 +1,13 @@
 use std::{
-    thread,
-    time,
-    sync::{Arc, Mutex}
+    sync::{Arc, Mutex},
+    thread, time,
 };
 use x0::bank::{deposit, withdraw, Account, Smaphore};
 
 fn main() {
     let ten_millis = time::Duration::from_millis(1000);
-    
-    let user_account = Arc::new(Mutex::new(Account {
-        wallet: 1000
-    }));
+
+    let user_account = Arc::new(Mutex::new(Account { wallet: 1000 }));
 
     let mut smaphore = Smaphore { sign: true };
 
@@ -39,7 +36,7 @@ fn main() {
                 withdraw(&two);
             }
             println!("\n\nSemafaro: {:?}\n\n", smaphore.sign);
-            smaphore.sign = true; 
+            smaphore.sign = true;
         }
     });
 

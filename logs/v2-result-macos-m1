@@ -1,3 +1,8 @@
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -9,6 +14,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -20,8 +35,18 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -33,6 +58,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -44,32 +79,18 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -81,6 +102,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -92,128 +123,18 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -225,6 +146,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -236,8 +167,18 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -249,6 +190,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -260,80 +211,18 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -345,6 +234,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -356,32 +255,18 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -393,6 +278,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -404,32 +299,18 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -441,6 +322,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -452,176 +343,18 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
-withdraw -> saldo: 800
-withdraw -> saldo: 600
-withdraw -> saldo: 400
-withdraw -> saldo: 200
-withdraw -> saldo: 0
-withdraw -> saldo: -200
-withdraw -> saldo: -400
-withdraw -> saldo: -600
-withdraw -> saldo: -800
-withdraw -> saldo: -1000
-withdraw -> saldo: -1200
-deposit -> saldo: -900
-deposit -> saldo: -600
-deposit -> saldo: -300
-deposit -> saldo: 0
-deposit -> saldo: 300
-deposit -> saldo: 600
-deposit -> saldo: 900
-deposit -> saldo: 1200
-deposit -> saldo: 1500
-deposit -> saldo: 1800
-deposit -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -633,6 +366,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -644,8 +387,18 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -657,6 +410,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -668,8 +431,18 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -681,6 +454,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -692,8 +475,18 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
 deposit -> saldo: 1300
 deposit -> saldo: 1600
 deposit -> saldo: 1900
@@ -705,6 +498,16 @@ deposit -> saldo: 3400
 deposit -> saldo: 3700
 deposit -> saldo: 4000
 deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
 withdraw -> saldo: 4100
 withdraw -> saldo: 3900
 withdraw -> saldo: 3700
@@ -716,5 +519,802 @@ withdraw -> saldo: 2700
 withdraw -> saldo: 2500
 withdraw -> saldo: 2300
 withdraw -> saldo: 2100
-Waller = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
--------
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
+
+
+Semafaro: true
+
+
+deposit -> saldo: 1300
+deposit -> saldo: 1600
+deposit -> saldo: 1900
+deposit -> saldo: 2200
+deposit -> saldo: 2500
+deposit -> saldo: 2800
+deposit -> saldo: 3100
+deposit -> saldo: 3400
+deposit -> saldo: 3700
+deposit -> saldo: 4000
+deposit -> saldo: 4300
+
+
+Semafaro: false
+
+
+
+
+Semafaro: true
+
+
+withdraw -> saldo: 4100
+withdraw -> saldo: 3900
+withdraw -> saldo: 3700
+withdraw -> saldo: 3500
+withdraw -> saldo: 3300
+withdraw -> saldo: 3100
+withdraw -> saldo: 2900
+withdraw -> saldo: 2700
+withdraw -> saldo: 2500
+withdraw -> saldo: 2300
+withdraw -> saldo: 2100
+
+
+Semafaro: false
+
+
+Wallet = Mutex { data: Account { wallet: 2100 }, poisoned: false, .. }
+----------
