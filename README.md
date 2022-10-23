@@ -38,4 +38,4 @@ Os arquivos marcados como V1 são implantações do programa sem o algoritmo. E 
 
 ## Observações
 
-A execução das threads varia conforme o OS utilizado, para comparar veja os arquivos `v1` do MacOS e Ubuntu.
+A execução das threads varia conforme o S.O utilizado, para comparar veja os arquivos `v1` do MacOS e Ubuntu.
